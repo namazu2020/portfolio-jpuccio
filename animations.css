@@ -1,0 +1,26 @@
+.fade-in,
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-left {
+  transform: translateX(-30px);
+}
+
+.fade-right {
+  transform: translateX(30px);
+}
+
+.show {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Efecto pulsante sutil */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
